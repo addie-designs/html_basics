@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Ordered List Favourite Fruits</h1>
+    <ol>
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Orange</li>
+      <li>Watermelon</li>
+    </ol>
+
+    <h2>Unordered List Favourite Fruits</h2>
+    <ul>
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Orange</li>
+      <li>Watermelon</li>
+    </ul>
+
+    <table border="1 pink" cellspacing="0" cellpadding="6" width="50%">
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Name</th>
+          <th>Points</th>
+          <th>Team</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Domenic</td>
+          <td>118,455</td>
+          <td>Dcode</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td>John</td>
+          <td>98,455</td>
+          <td>Codecademy</td>
+        </tr>
+      </tbody>
+    </table>
+    <h1>Creating forms</h1>
+    <form>
+      <label for="fullName">Full Name:</label>
+      <input
+        type="text"
+        id="fullName"
+        name="fullName"
+        placeholder="Enter your name"
+        value=""
+        required
+        maxlength="10"
+      />
+      <br />
+      <br />
+
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter your password"
+        value=""
+        required
+        maxlength="15"
+      />
+      <br />
+      <br />
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        name="email"
+        placeholder="Enter your email"
+        id="email"
+        value=""
+        required
+        maxlength="20"
+      />
+      <br />
+      <br /><label for="age">Age:</label>
+      <input
+        type="number"
+        id="age"
+        name="age"
+        placeholder="enter your age"
+        min="18"
+        max="100"
+      />
+      <br />
+      <br />
+
+      <input type="checkbox" name="terms" checked />Always get our news letters
+      <br />
+      <br />
+      <input type="checkbox" name="terms" />Subscribe to our newsletter
+
+      <br />
+
+      <input type="radio" name="gender" value="male" />Male
+      <input type="radio" name="gender" value="female" />Female
+      <input type="radio" name="gender" value="other" />Other
+
+      <br />
+      <br />
+
+      <textarea name="message" value="" placeholder="Enter your message">
+      </textarea>
+
+      <br />
+
+      <h3>Choose your favourite fruit</h3>
+      <select name="Fruits" multiple>
+        <option value="apple">Apple</option>
+        <option value="banana">Banana</option>
+        <option value="orange">Orange</option>
+        <option value="watermelon">Watermelon</option>
+      </select>
+      <br />
+
+      <input type="file" name="file" accept="" multiple />
+
+      <button type="submit">Submit Form</button>
+      <button type="reset">Reset Form</button>
+    </form>
+
+
+    
+
+
+  </body>
+</html>

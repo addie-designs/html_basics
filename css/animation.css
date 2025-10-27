@@ -1,0 +1,148 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.animatedText1{
+  font-size: 60px;
+  animation-name: example;
+  animation-duration: 8s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes example {
+  0%   {color: red; left:0px; top:0px;}
+  25%  {color: yellow; left:200px; top:0px;}
+  50%  {color: blue; left:200px; top:200px;}
+  75%  {color: green; left:0px; top:200px;}
+  100% {color: red; left:0px; top:0px;}
+}
+
+
+/* bouncing text */
+.animatedText2{
+  display: inline-block;
+  font-size: 3rem;
+  letter-spacing: -0.02em;
+  color: #c8a0a0;
+  will-change: transform;
+  transform-origin: center bottom;
+ animation: bounce 1.25s cubic-bezier(.28,.84,.42,1) infinite;
+}
+
+@keyframes bounce {
+  0%{
+    transform: translateY(0);
+  }
+
+  20%{
+    transform: translateY(0);
+  }
+
+  40%{
+    transform: translateY(-30px);
+  }
+
+  50%{
+    transform: translateY(0);
+  }
+
+  65%{
+    transform: translateY(-15px);
+  }
+
+  75%{
+    transform: translateY(0);
+  }
+
+  100%{
+    transform: translateY(0);
+  }
+  
+}
+
+
+
+
+/* rotate animatedDiv2 */
+
+.animatedDiv2{
+  width: 100px;
+  height: 100px;
+  margin: 40px;
+  background-color: #fff;
+  animation-name: example2;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes example2 {
+  0%   {background-color: red; transform: rotate(0deg);}
+  25%  {background-color: yellow; transform: rotate(90deg);}
+  50%  {background-color: blue; transform: rotate(180deg);}
+  75%  {background-color: green; transform: rotate(270deg);}
+  100% {background-color: red; transform: rotate(360deg);}
+}
+
+
+/* slide into the screen */
+.animatedDiv3{
+  width: 100px;
+  height: 100px;
+  margin: 40px;
+  background-color: #fff;
+  animation-name: example3;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes example3 {
+  0%   {background-color: red; transform: translateX(0px);}
+  25%  {background-color: yellow; transform: translateX(100px);}
+  50%  {background-color: blue; transform: translateX(200px);}
+  75%  {background-color: green; transform: translateX(300px);}
+  100% {background-color: red; transform: translateX(400px);}
+}
+
+/* douncing div */
+.animatedDiv4{
+  width: 100px;
+  height: 100px;
+  margin: 40px;
+  background-color: #fff;
+  animation-name: example4;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes example4 {
+  0%   {background-color: red; transform: translateY(0px);}
+  25%  {background-color: yellow; transform: translateY(-100px);}
+  50%  {background-color: blue; transform: translateY(-200px);}
+  75%  {background-color: green; transform: translateY(-300px);}
+  100% {background-color: red; transform: translateY(-400px);}
+}
+
+
+
+.gradientBox{
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to top, #ff0000, #eaff00);
+}
+
+ /* gradient on text  */
+/* .gText{
+  background: linear-gradient(to top, #ff0000, #eaff00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
